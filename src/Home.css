@@ -1,0 +1,402 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home
+{
+    display: flex;
+    position: relative;
+}
+.head
+{
+    height: 100%;
+    width: 80px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+ul li a
+{
+    display: inline-block;
+    margin-bottom: 45px;
+    color: white;
+}
+.photoname
+{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -40px;
+    left: 125px;
+}
+.name
+{
+    margin-left: 100px;
+}
+.name h1, .name h5
+{
+    border-left: 5px solid black;
+    padding: 10px;
+    padding-left: 20px;
+}
+.name h1
+{
+    font-size: 50px;
+}
+.name h5
+{
+    text-align: center;
+    font-size: 30px;
+}
+.name .btn1,.name .btn2
+{
+    background-color: white;
+    padding: 12px 70px;
+    border: 1px solid black;
+    margin: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.name .btn1:hover , .name .btn2:hover
+{
+    color: white;
+    background-color: black;
+}
+.name .btn1
+{
+    margin-right: 0px;
+}
+.home img
+{
+    width: 300px;
+    height: 400px;
+}
+.parentbox
+{
+    width: 400px;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+#unique
+{
+    width: fit-content;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+#picture
+{
+    box-shadow: -15px 15px white;
+}
+.about
+{
+    width: 94%;
+    height: 100vh;
+    margin-left: 80px;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about_container
+{
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-shadow: inset 5px 5px 10px #c5c5c5, inset -5px -5px 10px #fbfbfb;
+}
+.about_h1
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.about_p
+{
+    color: #1e293b;
+    text-align: center;
+}
+.code
+{   
+    width: 94%;
+    margin-left: 80px;
+}
+.code_h1
+{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 45px;
+}
+.web_box
+{
+    width: 350px;
+    margin-left: 70px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px #ebe5e5, -5px -5px 10px #f3efef;
+}
+.web_box img
+{
+    width: 355px;
+    height: 236px;
+}
+.web_box h1
+{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.work
+{
+    width: 94%;
+    margin-left: 80px;
+}
+.work_h1
+{
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+.work1
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.work1 .des
+{
+    width: 60%;
+}
+.work1 ul li
+{
+    list-style: none;
+    line-height: 1.7;
+}
+.work1 h2
+{
+    margin-bottom: 10px;
+}
+.work1 h3
+{
+    margin-bottom: 10px;
+}
+.work1 p
+{
+    font-size: 20px;
+}
+.work3
+{
+    margin-bottom: 100px;
+}
+.portfolio
+{
+    width: 94%;
+    margin-left: 80px;
+}
+.port_h1
+{
+    margin-top: 55px;
+    margin-left: 50px;
+    font-size: 35px;
+}
+.component
+{
+    display: flex;
+    justify-content: center;
+}
+.scr_box
+{
+    width: 350px;
+    height: 250px;
+    margin-left: 40px;
+    margin-top: 40px;
+    box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #fff;
+}
+.scr .img
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/apple.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: ease-in-out 2s;
+}
+.scr .img:hover
+{
+    background-position: bottom;
+}
+.contact
+{
+    width: 94%;
+    height: 100vh;
+    margin-left: 80px;
+    background-color: #EFECEC;
+}
+.contact h1
+{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+}
+.contact_container
+{
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #b8b6c0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.contact_name
+{
+    width: 98%;
+    height: 50px;
+    padding: 10px;
+}
+.contact_email
+{
+    width: 48%;
+    height: 50px;
+    padding: 10px;
+}.contact_contact
+{
+    width: 48%;
+    height: 50px;
+    padding: 10px;
+    margin-right: 0 !important;
+}
+.contact_subject
+{
+    width: 98%;
+    height: 50px;
+    padding: 10px;
+}
+.input_box
+{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+}
+.contact_message
+{
+    width: 98%;
+    height: 100px;
+    padding: 10px;
+    resize: vertical;   
+}
+.contact_submit
+{
+    margin-left: 390px;
+    padding: 10px 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.education
+{
+    width: 94%;
+    margin-left: 80px;
+}
+.education .btn1 , .education .btn2
+{
+    background-color: white;
+    padding: 12px 70px;
+    border: 1px solid black;
+    margin: 20px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.education .btn1
+{
+    margin-left: 50px;
+}
+.educationcontent , .internshipcontent
+{
+    width: 94%;
+    margin-left: 80px;
+}
+.internship
+{
+    width: 94%;
+    margin-left: 80px;
+}
+.educontent1 , .educontent2 , .intcontent1 , .intcontent2
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.intcontent2
+{
+    margin-bottom: 50px;
+}
+.educontent1 .des , .educontent2 .des, .intcontent1 .des, .intcontent2 .des
+{
+    width: 60%;
+}
+.educontent1 ul li, .educontent2 ul li, .intcontent1 ul li, .intcontent2 ul li
+{
+    list-style: none;
+    line-height: 1.7;
+}
+.educontent1 h2, .educontent2 h2, .intcontent1 h2, .intcontent2 h2
+{
+    margin-bottom: 10px;
+}
+.educontent1 h3, .educontent2 h3, .intcontent1 h3, .intcontent2 h3
+{
+    margin-bottom: 10px;
+}
+.educontent1 p, .educontent2 p, .intcontent1 p, .intcontent2 p
+{
+    font-size: 20px;
+}
+.educontent1 .par, .educontent2 .par, .intcontent1 .par
+{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.head .active
+{
+    color: aqua !important;
+}
+/* .education .active
+{
+    color: white !important;
+    background-color: black !important;
+} */
+.education .btn1:focus , .education .btn2:focus
+{
+    color: white !important;
+    background-color: black !important;
+}
