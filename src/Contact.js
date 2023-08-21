@@ -13,7 +13,9 @@ function Contact() {
                     <input className='contact_contact input_box' type='text' placeholder='Contact'/>
                     <input className='contact_subject input_box' type='text' placeholder='Subject'/>
                     <textarea className='contact_message input_box' placeholder='Message'></textarea>
-                    <input className='contact_submit' type='submit' value='SUBMIT'/>
+                    <div className='submitbox'>
+                      <input className='contact_submit' type='submit' value='SUBMIT'/>
+                    </div>
                 </form>
               </div>
 

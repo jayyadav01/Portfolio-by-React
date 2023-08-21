@@ -7,12 +7,11 @@
 }
 .home
 {
-    display: flex;
     position: relative;
 }
 .head
 {
-    height: 100%;
+    height: 100vh;
     width: 80px;
     background-color: black;
     position: fixed;
@@ -23,11 +22,18 @@
     align-items: center;
     z-index: 5;
 }
-ul li a
+.head li a
 {
     display: inline-block;
-    margin-bottom: 45px;
     color: white;
+}
+.head ul li
+{
+    margin-bottom: 3.5rem;
+}
+.head ul li:last-child
+{
+    margin-bottom: 0px;
 }
 .photoname
 {
@@ -37,8 +43,8 @@ ul li a
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -40px;
-    left: 125px;
+    bottom: 50px;
+    left: 120px;
 }
 .name
 {
@@ -56,7 +62,6 @@ ul li a
 }
 .name h5
 {
-    text-align: center;
     font-size: 30px;
 }
 .name .btn1,.name .btn2
@@ -83,15 +88,14 @@ ul li a
 }
 .home img
 {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 .parentbox
 {
     width: 400px;
     height: 100vh;
     background-color: black;
-    position: relative;
 }
 #unique
 {
@@ -105,7 +109,6 @@ ul li a
 }
 .about
 {
-    width: 94%;
     height: 100vh;
     margin-left: 80px;
     background-color: #E0E0E0;
@@ -135,13 +138,13 @@ ul li a
     text-align: center;
 }
 .code
-{   
-    width: 94%;
+{
+    height: 100vh;
     margin-left: 80px;
+    padding-top: 25px;
 }
 .code_h1
 {
-    margin-top: 25px;
     text-align: center;
     font-size: 45px;
 }
@@ -161,16 +164,15 @@ ul li a
 {
     font-size: 25px;
     text-align: center;
-    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 .work
 {
-    width: 94%;
     margin-left: 80px;
+    padding-top: 25px;
 }
 .work_h1
 {
-    margin-top: 35px;
     margin-left: 50px;
     font-size: 40px;
 }
@@ -209,26 +211,29 @@ ul li a
 }
 .portfolio
 {
-    width: 94%;
     margin-left: 80px;
 }
 .port_h1
 {
-    margin-top: 55px;
+    padding-top: 25px;
     margin-left: 50px;
-    font-size: 35px;
+    font-size: 40px;
 }
 .component
 {
     display: flex;
     justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+}
+.scr
+{
+    padding: 0 20px;
 }
 .scr_box
 {
     width: 350px;
     height: 250px;
-    margin-left: 40px;
-    margin-top: 40px;
     box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #fff;
 }
 .scr .img
@@ -247,47 +252,47 @@ ul li a
 }
 .contact
 {
-    width: 94%;
-    height: 100vh;
     margin-left: 80px;
     background-color: #EFECEC;
+    height: 100vh;
 }
 .contact h1
 {
     text-align: center;
     padding-top: 30px;
-    font-size: 50px;
+    font-size: 45px;
 }
 .contact_container
 {
     width: 1000px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 20px;
-    background-color: #b8b6c0;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .contact_name
 {
-    width: 98%;
+    width: 100%;
     height: 50px;
     padding: 10px;
 }
 .contact_email
 {
-    width: 48%;
+    width: 49%;
     height: 50px;
     padding: 10px;
-}.contact_contact
+}
+.contact_contact
 {
-    width: 48%;
+    width: 49%;
     height: 50px;
     padding: 10px;
-    margin-right: 0 !important;
+    margin-left: 19px !important;
 }
 .contact_subject
 {
-    width: 98%;
+    width: 100%;
     height: 50px;
     padding: 10px;
 }
@@ -295,19 +300,23 @@ ul li a
 {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border: none;
-    margin: 10px;
+    margin: 10px 0;
     font-size: 20px;
 }
 .contact_message
 {
-    width: 98%;
+    width: 100%;
     height: 100px;
     padding: 10px;
-    resize: vertical;   
+    resize: vertical
+}
+.submitbox
+{
+    width: 100%;
+    text-align: center;
 }
 .contact_submit
 {
-    margin-left: 390px;
     padding: 10px 50px;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -318,7 +327,6 @@ ul li a
 }
 .education
 {
-    width: 94%;
     margin-left: 80px;
 }
 .education .btn1 , .education .btn2
@@ -340,7 +348,6 @@ ul li a
 }
 .educationcontent , .internshipcontent
 {
-    width: 94%;
     margin-left: 80px;
 }
 .internship
@@ -399,4 +406,636 @@ ul li a
 {
     color: white !important;
     background-color: black !important;
+}
+
+
+
+@media all and (max-width : 1028px)
+{
+    
+    /* home */
+
+    .head ul li
+    {
+        margin-bottom: 3rem;
+    }
+    .parentbox
+    {
+        width: 300px;
+    }
+    .photoname
+    {
+        position: absolute;
+        left: 120px;
+        top: -50px;
+    }
+    .home img
+    {
+        width: 250px;
+        height: 250px;
+    }
+    .name h1
+    {
+        font-size: 40px;
+    }
+    .name h5
+    {
+        font-size: 25px;
+    }
+    .name .btn1 , .name .btn2
+    {
+        padding: 8px 50px;
+    }
+
+    /* about     */
+
+    .about .about_container {
+        width: 600px;
+        height: 300px;
+    }
+
+    /* code */
+    .code_h1 {
+        font-size: 35px;
+    }
+    .web_box {
+        width: 250px;
+        box-shadow: 5px 5px 10px #ebe5e5, -5px -5px 10px #f3efef;
+    }
+        
+    .web_box img {
+        width: 250px;
+        height: 150px;
+    }
+
+    /* work */
+    .work_h1 {
+        margin-left: 80px;
+        font-size: 35px;
+    }
+    
+    /* education */
+    .education .btn1, .education .btn2 {
+        padding: 12px 40px;
+    }
+    .educontent1 p, .educontent2 p, .intcontent1 p, .intcontent2 p {
+        font-size: 18px;
+    }
+
+    /* portfolio */
+    .port_h1
+    {
+        font-size: 35px;
+    }
+    .scr_box {
+        width: 250px;
+        height: 200px;
+    }
+
+    /* contact */
+    .contact h1 {
+        font-size: 35px;
+    }
+    .contact_container {
+        width: 700px;
+        margin-top: 20px;
+        padding: 20px;
+    }.contact_name
+    {
+        height: 40px;
+        padding: 10px;
+    }
+    .contact_email
+    {
+        width: 47%;
+        height: 40px;
+        padding: 10px;
+    }
+    .contact_contact
+    {
+        margin-left: 26px !important;
+        height: 40px;
+        padding: 10px;
+    }
+    .contact_subject
+    {
+        height: 40px;
+        padding: 10px;
+    }  
+    .contact_message
+    {
+        height: 80px;
+    } 
+}
+@media all and (max-width : 770px)
+{
+    .head ul li
+    {
+        margin-bottom: 3rem;
+    }
+    .parentbox
+    {
+        width: 240px ;
+    }
+    .photoname
+    {
+        position: absolute;
+        left: 110px;
+        top: -50px;
+    }
+    .name
+    {
+        margin-left: 70px;
+    }
+    .home img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .name h1
+    {
+        font-size: 30px;
+    }
+    .name h5
+    {
+        font-size: 18px;
+    }
+    .name .btn1 , .name .btn2
+    {
+        padding: 6px 25px;
+        font-size: 14px;
+    }
+
+    /* about */
+
+    .about .about_container {
+        width: 500px;
+    }
+
+    /* code */
+    .code_h1 {
+        font-size: 30px;
+    }
+    .web_box {
+        width: 200px;
+        margin-left: 50px;
+        box-shadow: 5px 5px 10px #ebe5e5, -5px -5px 10px #f3efef;
+    }
+    .web_box img {
+        width: 200px;
+        height: 120px;
+    }
+    .web_box h1 {
+        font-size: 20px;
+    }
+
+    /* work */
+    .work_h1 {
+        font-size: 30px;
+    }
+    .work1 p {
+        font-size: 16px;
+    }
+    .work1 h2 {
+        font-size: 25px;
+    }
+    .work1 h3 {
+        font-size: 18px;
+    }
+    .work1 ul li {
+        font-size: 14px;
+    }
+
+    /* education */
+    .education .btn1, .education .btn2 {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    .educontent1 p, .educontent2 p, .intcontent1 p, .intcontent2 p {
+        font-size: 16px;
+    }
+    .educontent1 h2, .educontent2 h2, .intcontent1 h2, .intcontent2 h2 {
+        font-size: 20px;
+    }
+    .educontent1 h3, .educontent2 h3, .intcontent1 h3, .intcontent2 h3 {
+        font-size: 16px;
+    }
+
+    /* portfolio */
+    .port_h1
+    {
+        font-size: 30px;
+    }
+    .scr
+    {
+        padding: 0 15px;
+    }
+    .scr_box {
+        width: 170px;
+        height: 100px;
+    }
+
+    /* contact */
+    .contact h1 {
+        font-size: 30px;
+    }
+    .contact_container {
+        width: 500px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .contact_name
+    {
+        height: 35px;
+    }
+    .contact_email
+    {
+        height: 35px;
+    }
+    .contact_contact
+    {
+        margin-left: 18px !important;
+        height: 35px;
+    }
+    .contact_subject
+    {
+        height: 35px;
+    }  
+    .contact_message
+    {
+        height: 80px;
+    }
+    .input_box 
+    {
+        font-size: 18px;
+    }
+}
+@media  all and (max-width: 430px) 
+{
+    .head
+    {
+        width: 50px;
+    }
+    .head ul li
+    {
+        margin-bottom: 3rem;
+    }
+    .head ul li a svg
+    {
+        font-size: 20px;
+    }
+    .parentbox
+    {
+        width: 50px;
+    }
+    .photoname
+    {
+        position: absolute;
+        left: 60px;
+        top: 0px;
+        flex-direction: column;
+    }
+    .home img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    #picture
+    {
+        box-shadow: -10px 10px white;
+    }
+    .name
+    {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+    .name h1
+    {
+        font-size: 20px;
+    }
+    .name h5
+    {
+        font-size: 15px;
+    }
+    .name .btn1 , .name .btn2
+    {
+        padding: 8px 10px;
+        font-size: 10px;
+    }   
+
+    /* about */
+
+    .about {
+        margin-left: 49px;
+    }
+    .about .about_container {
+        width: 250px;
+        height: 400px;
+    }
+
+    /* code */
+    .code {
+        margin-left: 49px;
+    }
+    .web_box {
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    /* work */
+    .work {
+        margin-left: 49px;
+    }
+    .work_h1 {
+        font-size: 25px;
+    }
+    .work1 p {
+        font-size: 14px;
+    }
+    .work1 h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .work1 h3 {
+        font-size: 14px;
+    }
+    .work1 ul li {
+        font-size: 12px;
+    }
+    .work1 {
+        width: 80%;
+        margin-top: 30px;
+    }
+    .work_h1 {
+        margin-left: 35px;
+    }
+
+    /* education */
+    .education {
+        margin-left: 49px;
+    }
+    .educationcontent, .internshipcontent {
+        margin-left: 49px;
+    }
+    .education .btn1, .education .btn2 {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .education .btn1 {
+        margin-left: 70px;
+    }
+    .educontent1 p, .educontent2 p, .intcontent1 p, .intcontent2 p {
+        font-size: 14px;
+    }
+    .educontent1 h2, .educontent2 h2, .intcontent1 h2, .intcontent2 h2 {
+        font-size: 18px;
+    }
+    .educontent1 h3, .educontent2 h3, .intcontent1 h3, .intcontent2 h3 {
+        font-size: 16px;
+    }
+    .educontent1 .par, .educontent2 .par, .intcontent1 .par {
+        font-size: 14px;
+    }
+    .educontent1 ul li, .educontent2 ul li, .intcontent1 ul li, .intcontent2 ul li {
+        font-size: 14px;
+    }
+
+    /* portfolio */
+    .portfolio {
+        margin-left: 49px;
+    }
+    .port_h1
+    {
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    .component
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .scr
+    {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    /* contact */
+    .contact
+    {
+        margin-left: 49px;
+    }
+    .contact_container {
+        width: 300px;
+        padding: 10px;
+    }
+    .input_box {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .contact_name {
+        height: 30px;
+    }
+    .contact_email {
+        width: 100%;
+        height: 30px;
+    }
+    .contact_contact {
+        width: 100%;
+        height: 30px;
+        margin-left: 0px !important;
+    }
+    .contact_subject {
+        height: 30px;
+    }
+    .contact_submit {
+        padding: 5px 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
+@media  all and (max-width: 380px) 
+{
+    .head ul li
+    {
+        margin-bottom: 3rem;
+    }
+    .photoname
+    {
+        position: absolute;
+        left: 60px;
+        top: 0px;
+        flex-direction: column;
+    }
+    .name
+    {
+        padding-top: 50px;
+        padding-left: 0px;
+        margin-left: 0;
+    }
+    #picture
+    {
+        box-shadow: -10px 10px white;
+    }
+    .name h1, .name h5 
+    {
+        border-left: 3px solid black;
+    }
+
+    /* about */
+
+    .about .about_container {
+        width: 200px;
+        height: 500px;
+    }
+
+    /* work */
+    .work1 p {
+        font-size: 12px;
+    }
+    .work1 h2 {
+        font-size: 18px;
+    }
+    .work1 h3 {
+        font-size: 14px;
+    }
+    .work1 ul li {
+        font-size: 12px;
+    }
+    .work_h1 {
+        margin-left: 30px;
+    }
+
+    /* education */
+    .education .btn1 {
+        margin-left: 45px;
+    }
+
+    /* contact */
+    .contact_container {
+        width: 250px;
+    }
+    .input_box {
+        font-size: 14px;
+    }
+    .contact_submit {
+        padding: 8px 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+@media  all and (max-width: 325px) 
+{
+    .head
+    {
+        width: 50px;
+    }
+    .head ul li
+    {
+        margin-bottom: 3rem;
+    }
+    .head ul li a svg
+    {
+        font-size: 20px;
+    }
+    .parentbox
+    {
+        width: 50px;
+    }
+    .photoname
+    {
+        position: absolute;
+        left: 50px;
+        top: 0px;
+        flex-direction: column;
+    }
+    .home img
+    {
+        width: 150px;
+        height: 150px;
+    }
+    #picture
+    {
+        box-shadow: -8px 8px white;
+    }
+    .name
+    {
+        padding-top: 50px;
+        padding-left: 20px;
+        margin-left: 0;
+    }
+    .name h1, .name h5 
+    {
+        border-left: 3px solid black;
+    }
+    .name h1
+    {
+        font-size: 18px;
+    }
+    .name h5
+    {
+        font-size: 13px;
+    }
+    .name .btn1 , .name .btn2
+    {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    /* work */
+    .work_h1 {
+        margin-left: 25px;
+    }
+    .work1 p {
+        font-size: 12px;
+    }
+    .work1 h2 {
+        font-size: 16px;
+    }
+    .work1 h3 {
+        font-size: 12px;
+    }
+    .work1 ul li {
+        font-size: 12px;
+    }
+    
+    /* education */
+    .education .btn1 {
+        margin-left: 28px;
+    }
+    .education .btn1, .education .btn2 {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .educontent1, .educontent2, .intcontent1, .intcontent2 {
+        margin-top: 40px;
+    }
+    .educontent1 p, .educontent2 p, .intcontent1 p, .intcontent2 p {
+        font-size: 12px;
+    }
+    .educontent1 h2, .educontent2 h2, .intcontent1 h2, .intcontent2 h2 {
+        font-size: 16px;
+    }
+    .educontent1 h3, .educontent2 h3, .intcontent1 h3, .intcontent2 h3 {
+        font-size: 14px;
+    }
+    .educontent1 .par, .educontent2 .par, .intcontent1 .par {
+        font-size: 12px;
+    }
+    .educontent1 ul li, .educontent2 ul li, .intcontent1 ul li, .intcontent2 ul li {
+        font-size: 12px;
+    }
+
+    /* contact */
+    .contact_container {
+        width: 200px;
+    }
+    .contact_submit {
+        padding: 5px 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
 }
