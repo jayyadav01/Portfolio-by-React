@@ -6,7 +6,7 @@ function WebDeveloper() {
         <div className='web'>
             <div className='web_box'>
                 <img src='./web developer.png'/>
-                <h1>WEB DEVELOPER</h1>
+                <h1>FRONTEND DEVELOPER</h1>
             </div>
         </div>
     </>
